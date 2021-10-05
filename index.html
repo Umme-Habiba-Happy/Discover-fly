@@ -11,6 +11,7 @@
         rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>">
 </head>
 
 <body>
@@ -109,9 +110,6 @@
         </div>
         </section>
 
-        <!--Thank You-->
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>">
-
         <script>
             function handleTicketChange(ticket, isIncrease) {
                 const ticketInput = document.getElementById(ticket + '-quantity');
@@ -134,7 +132,6 @@
                 calculateTotal();
             }
 
-
             function calculateTotal() {
                 const firstInput = document.getElementById('first-quantity');
                 const firstCount = parseInt(firstInput.value);
@@ -151,16 +148,10 @@
                 const grandTotal = totalTicketPrice + vat;
                 document.getElementById('grand-total').innerText = grandTotal;
 
-
-
             }
             function popUp() {
                 swal("CONGRATULATION!", "You have successfully booked the tickets!", "success");
             }
         </script>
-
-
-
 </body>
-
 </html>
